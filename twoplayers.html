@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Player Dice Game</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="score">
+      <!-- Max tries -->
+      <p>
+        Max tries: <span id="maxTries"></span>
+      </p>
+      <!-- Tries -->
+      <p>
+        Player 1 Tries: <span id="tries">0</span>
+      </p>
+    </div>
+    <div class="dice">
+      <div id="dice1" class="die">1</div>
+    </div>
+    <p id="result">Player 1, click "Roll Dice" to roll!</p>
+    <div class="btnSection">
+      <button onclick="rollDie()">Roll Dice</button>
+      <button onclick="refresh()">Refresh</button>
+    </div>
+  </div>
+  <script src="./twoplayers.js"></script>
+</body>
+</html>

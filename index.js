@@ -35,6 +35,7 @@ function rollDie() {
       // Reset player tries for the next game
       playerTries = [0, 0];
     } else if (playerTries[currentPlayer - 1] === MAX_TRIES) {
+      playerTries[currentPlayer - 1] = 0
       RESULT.textContent = `Player ${currentPlayer} has used all their tries. Switching players...`;
       setTimeout(switchPlayer, 1000);
     } else {
